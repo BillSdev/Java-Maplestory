@@ -1,8 +1,6 @@
 # Java-Maplestory
 MapleStory clone developed in Java
 
-This is the project I have invested the most time and effort in up to date.
-
 I attempted to clone a certain 2D platformer game called Maplestory.
 
 Tried to design the project in an Object-Oriented way as much as I could.
