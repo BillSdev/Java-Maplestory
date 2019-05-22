@@ -7,7 +7,9 @@ Tried to design the project in an Object-Oriented way as much as I could.
 
 Some more newer features leave more to be desired in terms of design and implementaion because they where added on a whim a long time after I stopped working on the project.
 
-When in game, press 'O' to wear\remove shirt, 
+When in game: 
+              
+              press 'O' to wear\remove shirt, 
 
               press 'L' to wear\remove pants,
               
