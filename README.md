@@ -36,7 +36,7 @@ When in game, press 'O' to wear\remove shirt,
               cannonangle x     -    x can only be an interger (for now),    change the angle at which the cannon is thown
               cannonvector x     -     x is an integer,  change the speed of the cannon ball
               cannongravity x   -   x is an integer,  change the gravity of the cannon ball
-              press ESC after entering the command
+              press ESC after typing the command
            
               
               
