@@ -7,6 +7,9 @@ import javax.imageio.ImageIO;
 
 import Main.GamePanel;
 
+//a simple object that draws the picture of the map.
+//moveScale is used to move the background only a fraction of how much the map moved to give an effect of being far away.
+
 public class Background
 {
   private BufferedImage image;
@@ -16,18 +19,15 @@ public class Background
   private double dy;
   private double moveScale;
   
-  public Background(String s, double ms)
-  {
-    try
-    {
+  public Background(String s, double ms) {
+    try  {
     	System.out.println("S1.5");
     	image = ImageIO.read(
         getClass().getResourceAsStream(s));
       
       moveScale = ms;
     }
-    catch (Exception e)
-    {
+    catch (Exception e) {
       e.printStackTrace();
     }
   }
@@ -37,20 +37,17 @@ public class Background
   }
   
   
-  public void setPosition(double x, double y)
-  {
+  public void setPosition(double x, double y) {
     x = (x * moveScale);
     y = (y * moveScale);
   }
   
-  public void setVector(double dx, double dy)
-  {
+  public void setVector(double dx, double dy) {
     this.dx = dx;
     this.dy = dy;
   }
   
-  public void update()
-  {
+  public void update() {
     x += dx;
     y += dy;
   }
@@ -60,19 +57,10 @@ public class Background
   public void draw(Graphics2D g)
   {
     g.drawImage(image, (int)x, (int)y, null);
-    if (x < 0) {
-      g.drawImage(
-        image, 
-        (int)x + GamePanel.WIDTH, 
-        (int)y, 
-        null);
-    }
-    if (x > 0) {
-      g.drawImage(
-        image, 
-        (int)x - GamePanel.WIDTH, 
-        (int)y, 
-        null);
-    }
+    if (x < 0) 
+      g.drawImage( image, (int)x + GamePanel.WIDTH, (int)y,  null);
+    if (x > 0) 
+	 g.drawImage( image,  (int)x - GamePanel.WIDTH,  (int)y,   null);
+    
   }
 }
